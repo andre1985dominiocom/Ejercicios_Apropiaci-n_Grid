@@ -1,0 +1,23 @@
+@import url(styles.css);
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.Item {
+    background-color: #e74c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+.Item:nth-child(1) {
+    background-color: #525252;
+    grid-column: 2 / 3;
+    grid-row: 3 / 1 ;
+}

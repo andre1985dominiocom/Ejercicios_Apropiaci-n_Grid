@@ -1,0 +1,60 @@
+@import url(styles.css);
+
+.grid-areas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-areas: "header header header"
+                        "menu main aside"
+                        "footer footer footer";
+
+                        height: var(--height-item);
+}
+
+.header {
+    grid-area: header;
+    background-color: #f02031;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    padding: 30px;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #5c4afa;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #22beee;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #90e606;
+    color: white;
+    padding: 60px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #070406;
+    color: #5c4afa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
