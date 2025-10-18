@@ -1,0 +1,46 @@
+@import url(styles.css);
+
+.grid-capas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin: 30px auto;
+    position: relative;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #9ffc34;
+    color: var(font--color);
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.item-imagen img {
+    width: var(--width-item);
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item-texto {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.438);
+    border-radius: 10px;
+    opacity: 0.9;
+    text-align: center;
+    padding: 10px;
+}
